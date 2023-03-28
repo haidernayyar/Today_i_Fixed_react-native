@@ -17,6 +17,9 @@ To use cropper tool from `react-native-image-crop-picker` we can use the followi
 
 and even when you are explicitly requesting permission from user before using the cropper.
 
+![image](https://user-images.githubusercontent.com/11868557/228209902-79b73543-074a-4a69-9cda-94891b0a659f.png)
+
+
 ## Environment
 - OS: `Android`
 - React Native: `^0.70.6`
@@ -46,5 +49,6 @@ Currently there are not proper fix so we need to make some changes to the librar
     final Uri uri = Uri.parse(options.getString("path"));
     startCropping(activity, uri);
   }
-
 ```
+
+<img width="1004" alt="image" src="https://user-images.githubusercontent.com/11868557/228209731-58f66049-b622-48c2-a8a3-a32b72a31d4c.png">
