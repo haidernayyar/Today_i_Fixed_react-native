@@ -44,13 +44,7 @@ Currently there are not proper fix so we need to make some changes to the librar
     resultCollector.setup(promise, false);
 
     final Uri uri = Uri.parse(options.getString("path"));
-    permissionsCheck(activity, promise, Collections.singletonList(Manifest.permission.WRITE_EXTERNAL_STORAGE), new Callable<Void>() {
-        @Override
-        public Void call() {
-            startCropping(activity, uri);
-            return null;
-        }
-    });
+    startCropping(activity, uri);
   }
 
 ```
